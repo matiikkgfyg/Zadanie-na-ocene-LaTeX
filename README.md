@@ -12,3 +12,4 @@ W moim repozytorium znajdują się wszystkie pliki źródłowe do zadania.
 -ls pozwala nam sprawdzić foldery pliki jakie mamy
 -cd przejście do danego katalogu
 #####Dziękuję za przeczytanie pozdrawiam miłeg dnia lub wieczoru#####
+
