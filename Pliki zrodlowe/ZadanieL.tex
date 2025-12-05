@@ -1,0 +1,222 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\small\thepage}
+\fancyhead[LO]{\small\leftmark}
+\fancyhead[RE,RO]{\small Mateusz Dziedzic}
+\setlength{\headheight}{15pt}
+
+\title{NVIDIA we współczesnej informatyce:\\
+	grafika, sztuczna inteligencja i zastosowania profesjonalne}
+\author{Mateusz Dziedzic}
+\date{18 listopada 2025}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\centering
+		{\Huge\bfseries NVIDIA we współczesnej informatyce\par}
+		\vspace{0.5cm}
+		{\Large Grafika, sztuczna inteligencja i zastosowania profesjonalne\par}
+		\vspace{3cm}
+		{\Large Autor: Mateusz Dziedzic\par}
+		\vfill
+		{\large Data powstania dokumentu: 18 listopada 2025 r.\par}
+	\end{titlepage}
+	
+	\chapter*{Streszczenie}
+	Celem dokumentu jest przedstawienie roli firmy NVIDIA
+	we współczesnej informatyce. Omówiono historię firmy, rozwój kart graficznych,
+	zastosowania w sztucznej inteligencji oraz w obliczeniach wysokiej wydajności.
+	Zaprezentowano przykładowe dane w formie tabeli oraz ilustrację poglądową.
+	
+	W ostatnim rozdziale przedstawiono krótkie wnioski oraz uzasadniono wybór klasy \texttt{report}.
+	\clearpage
+	
+	\tableofcontents
+	\clearpage
+	
+	\chapter{Wprowadzenie do firmy NVIDIA}
+	
+	Firma NVIDIA jest jednym z najważniejszych producentów układów graficznych
+	na świecie. Została założona w latach 90. XX wieku w Stanach Zjednoczonych,
+	a jej głównym celem było dostarczanie wydajnych akceleratorów grafiki
+	dla rynku gier komputerowych i multimediów \cite{nvidia-history}.
+	
+	NVIDIA od początku swojej działalności skupiała się na przetwarzaniu równoległym.
+	Przełomowym osiągnięciem było wprowadzenie w 1999 roku pierwszego GPU – GeForce 256.
+	Tym samym firma zdefiniowała sprzętową akcelerację grafiki 3D, znacząco przyspieszając generowanie obrazu.
+	
+	W kolejnych latach NVIDIA przejmowała przedsiębiorstwa technologiczne, m.in. 3dfx Interactive oraz Mellanox,
+	rozszerzając kompetencje w dziedzinie infrastruktury sieciowej i obliczeń naukowych. Obecnie firma buduje kompletne ekosystemy programistyczne,
+	biblioteki dla AI oraz rozwiązania chmurowe.
+	
+	\section{Historia i kontekst rynkowy}
+	
+	Pierwsze produkty NVIDIA były skierowane przede wszystkim do użytkowników domowych. Z czasem firma rozszerzyła działalność na:
+	
+	\begin{itemize}
+		\item rynek profesjonalny,
+		\item centra danych i obliczenia wysokiej wydajności,
+		\item zastosowania związane z uczeniem maszynowym i sztuczną inteligencją.
+	\end{itemize}
+	
+	Rozwój GPU zbiegł się w czasie z intensywnym rozwojem branży gier komputerowych, co stworzyło sprzyjające warunki do ekspansji produktów takich jak seria GeForce \cite{smith-gpu}.
+	
+	\section{Etapy rozwoju produktów NVIDIA}
+	
+	\begin{enumerate}
+		\item Układy 3D,
+		\item Seria GeForce,
+		\item Rozwiązania profesjonalne,
+		\item GPU dla centrów danych i AI.
+	\end{enumerate}
+	
+	Firma rozwinęła również własne środowiska deweloperskie:
+	
+	\begin{itemize}
+		\item CUDA – platforma do obliczeń równoległych,
+		\item TensorRT – optymalizacja modeli sztucznej inteligencji,
+		\item Omniverse – system do symulacji 3D i cyfrowych bliźniaków.
+	\end{itemize}
+	
+	\chapter{Technologie i zastosowania GPU NVIDIA}
+	
+	\section{Karty graficzne GeForce}
+	
+	Linia GeForce skierowana jest głównie do graczy i zaawansowanych użytkowników domowych.
+	Zapewnia wysoką wydajność w grach komputerowych, a modele RTX obsługują technologię ray tracing,
+	co umożliwia realistyczne odwzorowanie światła i cieni.
+	
+	\subsection{Przykładowa ilustracja}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.6\textwidth]{/home/matt/Pobrane/nvidiaaa1.jpg}
+		\caption{MSI Nvidia Geforce GTX 1050TI.}
+		\label{fig:gpu-photo}
+	\end{figure}
+	
+	\clearpage
+	
+	\section{Zastosowania profesjonalne i obliczenia naukowe}
+	
+	Obecnie GPU NVIDIA używane są w:
+	
+	\begin{itemize}
+		\item studiach filmowych i renderingu 3D,
+		\item laboratoriach naukowych,
+		\item centrach danych,
+		\item zastosowaniach inżynierskich,
+		\item medycynie i analizie obrazów medycznych,
+		\item modelowaniu zjawisk fizycznych.
+	\end{itemize}
+	
+	W miarę wzrostu zapotrzebowania na moc obliczeniową, NVIDIA stale zwiększa liczbę rdzeni CUDA i Tensor Core w swoich kartach, co pozwala na wykonywanie bilionów operacji na sekundę.
+	
+	\chapter{NVIDIA i sztuczna inteligencja}
+	
+	\section{GPU jako akceleratory sieci neuronowych}
+	
+	GPU wyróżniają się architekturą do wykonywania tysięcy operacji równolegle.
+	Jest to idealne do uczenia sieci neuronowych, ponieważ AI opiera się na operacjach macierzowych i wektorowych.
+	
+	\begin{equation}
+		T = \frac{N \cdot E}{P}
+	\end{equation}
+	
+	Zalety GPU w AI:
+	
+	\begin{enumerate}
+		\item Równoległość obliczeń,
+		\item Skrócenie czasu trenowania modeli,
+		\item Ekosystem programistyczny CUDA wspierający popularne biblioteki (TensorFlow, PyTorch).
+	\end{enumerate}
+	
+	\section{Uproszczone porównanie wybranych kart}
+	
+	\begin{table}[h!]
+		\centering
+		\caption{Przykładowe karty graficzne NVIDIA i ich parametry}
+		\label{tab:karty}
+		\begin{tabular}{lccc}
+			\toprule
+			Model karty      & Rok premiery & Pamięć [GB] & Zastosowanie \\
+			\midrule
+			GeForce GTX 1060 & 2016         & 6           & Gry \\
+			GeForce RTX 3080 & 2020         & 10          & Gry / AI \\
+			NVIDIA A100      & 2020         & 40          & AI / Serwery \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+	\chapter{Kilka uwag ,które warto przeczytać}
+	
+	Do przygotowania dokumentu użyto klasy \texttt{report}, pozwalającej na tworzenie rozdziałów, podrozdziałów oraz osobnej strony tytułowej co było bardzo potrzebne w tym przypadku.
+	
+	Zastosowane pakiety:
+	
+	\begin{itemize}
+		\item \texttt{geometry} – modyfikacja marginesów,
+		\item \texttt{graphicx} – obsługa ilustracji,
+		\item \texttt{booktabs} – estetyczne tabele,
+		\item \texttt{hyperref} – aktywne odnośniki,
+		\item \texttt{fancyhdr} – nagłówki i stopki.
+	\end{itemize}
+	
+	Dzięki nim dokument jest przejrzysty ,wygląda ładnie i funkcjonalny.
+	
+	\chapter{Wnioski}
+		
+	Użyłem klasy \texttt{report} ,ponieważ krótkie przedstawienie firmy Nvidia wymagało przejrzystej struktury, spisu treści. Użycie klasy \texttt{Book} było możliwe lecz dokument ,który jest stosunkowo krótki było by trochę nad wyraz bo klasa \texttt{Book} pasuje dobrze do długich dokumentów, książek czy prac Magisterskich.
+	
+	\section*{Repozytorium z kodem źródłowym}
+	
+	\begin{center}
+		\href{https://github.com/matiikkgfyg/Zadanie-na-ocene-LaTeX.git}{https://github.com/matiikkgfyg/Zadanie-na-ocene-LaTeX.git}
+	\end{center}
+	\clearpage
+	
+	\begin{thebibliography}{9}
+		\bibitem{nvidia-history}
+		NVIDIA Corporation,
+		Company History and Milestones, materiały firmowe, dostęp online.
+		
+		\bibitem{smith-gpu}
+		J. Smith,
+		The Evolution of Graphics Processing Units, Journal of Computer Graphics, 2020.
+		
+		\bibitem{goodfellow-dl}
+		I. Goodfellow, Y. Bengio, A. Courville,
+		Deep Learning, MIT Press, 2016.
+		
+		\bibitem{nvidia-a100}
+		NVIDIA Corporation,
+		NVIDIA A100 Tensor Core GPU Architecture, whitepaper techniczny, 2020.
+	
+		\bibitem{wikimedia-1050ti}
+		Wikimedia Commons,
+		„Nvidia GeForce GTX 1050 Ti”, licencja CC BY-SA 4.0, dostęp online: 
+		\url{https://www.amazon.de/MSI-GeForce-DL-DVI-D-Afterburner-Grafikkarte/dp/B01N683IAQ}, stan na 3 grudnia 2025.
+		
+		
+		
+	
+	\end{thebibliography}
+	
+\end{document}
